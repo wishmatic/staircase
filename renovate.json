@@ -1,0 +1,32 @@
+{
+	"extends": ["config:recommended"],
+	"timezone": "UTC",
+	"schedule": ["after 12pm on tuesday"],
+	"lockFileMaintenance": {
+		"enabled": true,
+		"automerge": true,
+		"automergeType": "branch"
+	},
+	"hostRules": [],
+	"packageRules": [
+		{
+			"matchManagers": ["gomod"],
+			"matchPackageNames": ["github.com/wishmatic/namegen"],
+			"enabled": false
+		},
+		{
+			"groupName": "Update dev dependencies via Renovate",
+			"matchDepTypes": ["devDependencies"],
+			"matchUpdateTypes": ["patch", "minor"],
+			"automerge": true,
+			"automergeType": "branch"
+		},
+		{
+			"groupName": "Update dependencies via Renovate",
+			"matchDepTypes": ["dependencies", "peerDependencies"],
+			"matchUpdateTypes": ["patch", "minor"],
+			"automerge": true,
+			"automergeType": "branch"
+		}
+	]
+}
