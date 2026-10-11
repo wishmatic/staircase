@@ -37,6 +37,16 @@ Details can be found in [Philosophies](./docs/PHILOSOPHIES.md), but in short:
 
 To be written.
 
+### Desktop App
+
+We have plans in the future to expand Staircase to run self-contained in a packaged Go-based executable. For this to
+happen, we need to have the Go binary also host the pre-compiled static files and act as a simple (but secure) file
+server.
+
+### Mobile App
+
+We will not support a mobile deployment. If you want this, deploy as a web app and add the PWA to your home screen.
+
 ## Local Development
 
 The core of this repository is a Vite + React client frontend that requires a running backend. The Go backend does not
