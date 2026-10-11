@@ -7,10 +7,10 @@ FOSS LLM-powered opinionated story/scenario player.
 ## Features
 
 - UX as a priority.
-  - A lot of the problems with SillyTavern in our opinion is just how hard it is to get set up.
+  - A lot of the problems with SillyTavern, in our opinion, are just how hard it is to get set up.
 - Image generation as a first-class citizen via popular providers.
 - Custom MCP connectors for any agent you want.
-- Recursive summarisation with actual RAG (BYO embeddings model and reranker).
+- Recursive low-compression summaries with actual RAG (BYO embeddings model and reranker).
 - As wide and deep as you like; lorebooks, maps, and so on are optional, easy-to-use features.
   - Lorebooks automatically create links when they're detected in output.
 
@@ -22,13 +22,13 @@ Details can be found in [Philosophies](./docs/PHILOSOPHIES.md), but in short:
   - This is a full game engine with LLMs handling many parts of it. This means you can move around actual locations,
     use actual items, and take part in combat without any LLM calls. When an LLM does need to be called, it has a log
     of everything that happened recently.
-  - Souls-like flask system for healing, unified stamina/mana system, archery/firearms with ammunition, weighted gold,
+  - Souls-like flask system for healing, unified stamina/mana system, archery/firearms with ammunition, currency system,
     travelling a world map, mechanical time of day, item economy, combat engine, and more!
 - Skill checks are made by a fast agent before your input is sent to the LLM.
-- Dialogue is not just plain LLM output, but a chained tool call. This way, you actually get to interject when the
+- Dialogue is not just plain LLM output but a chained tool call. This way, you actually get to interject when the
   agent goes on monologues and doesn't give you a chance to roleplay.
 - We cut anything that doesn't test well (feel good) personally to us.
-  - While this may initially feel more restrictive, it leads to fewer points of failure, and means anything we do
+  - While this may initially feel more restrictive, it leads to fewer points of failure and means anything we do
     include is polished to a mirror's shine.
 - We allow editing the world lorebook granularly and do the same with characters.
 - Lightweight scorer agent to fix rule-following by the agents.
